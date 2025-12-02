@@ -1,6 +1,0 @@
-ls
-cd /home
-ls -la
-cd $HOME
-help
-exit
