@@ -13,7 +13,7 @@ def expand_env_vars(text):
     return re.sub(r'\$(\w+)', lambda m: os.getenv(m.group(1), ''), text)
 
 def main():
-    print("=== Эмулятор командной строки (Вариант 7) ===")
+    print("=== Эмулятор командной строки () ===")
     print("Введите команды. Для выхода введите 'exit'")
     print("=" * 50)
     
