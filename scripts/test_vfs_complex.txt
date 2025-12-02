@@ -1,0 +1,43 @@
+# Тестовый скрипт для сложной VFS (3+ уровня вложенности)
+echo "=== ТЕСТ СЛОЖНОЙ VFS ==="
+
+echo "1. Дерево всей файловой системы:"
+tree
+
+echo ""
+echo "2. Переходим в users/user:"
+cd /home/user
+pwd
+
+echo ""
+echo "3. Смотрим файлы:"
+ls
+
+echo ""
+echo "4. Читаем document.txt:"
+cat document.txt
+
+echo ""
+echo "5. Пытаемся прочитать несуществующий файл:"
+cat not_exist.txt
+
+echo ""
+echo "6. Переходим в несуществующую директорию:"
+cd /fake/path
+
+echo ""
+echo "7. Возвращаемся в корень и проверяем tree:"
+cd /
+tree
+
+echo ""
+echo "8. Тест команды cd с ..:"
+cd home/user
+pwd
+cd ..
+pwd
+cd ../..
+pwd
+
+echo ""
+echo "=== ТЕСТ ЗАВЕРШЕН ==="
