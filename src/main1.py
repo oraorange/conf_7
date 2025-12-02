@@ -1,4 +1,3 @@
-# Пример на Python
 import os
 import getpass
 import socket
