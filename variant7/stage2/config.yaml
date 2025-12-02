@@ -1,0 +1,5 @@
+# Конфигурация для эмулятора (Этап 2)
+vfs_path: "./vfs_examples/example.zip"
+log_path: "./logs/emulator.log"
+script_path: "./scripts/startup.txt"
+prompt_format: "user@host:vfs$ "
